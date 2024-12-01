@@ -50,6 +50,5 @@ def update_graph(angle):
     )
     return fig
 
-# Run the app
-if __name__ == "__main__":
-    app.run_server(debug=True)
+# Expose the app for Gunicorn
+server = app.server
